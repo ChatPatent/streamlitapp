@@ -2,12 +2,13 @@
 import os 
 import chromadb
 import pypdf
+import tiktoken
+import streamlit as st
+from streamlit_chat import message
 from langchain.llms import OpenAI
 from langchain.document_loaders import TextLoader
 from langchain.document_loaders import PyPDFLoader
 from langchain.indexes import VectorstoreIndexCreator
-import streamlit as st
-from streamlit_chat import message
 from langchain.chat_models import ChatOpenAI
 
 API_KEY = "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"
