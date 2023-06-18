@@ -11,7 +11,7 @@ from langchain.document_loaders import PyPDFLoader
 from langchain.indexes import VectorstoreIndexCreator
 from langchain.chat_models import ChatOpenAI
 
-API_KEY = "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"
+API_KEY = "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"
 model_id = "gpt-3.5-turbo"
 
 os.environ["OPENAI_API_KEY"] = API_KEY
