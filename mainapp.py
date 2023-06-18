@@ -8,7 +8,7 @@ import streamlit as st
 from streamlit_chat import message
 from langchain.chat_models import ChatOpenAI
 
-API_KEY = "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"
+API_KEY = "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"
 model_id = "gpt-3.5-turbo"
 
 os.environ["OPENAI_API_KEY"] = API_KEY
