@@ -1,5 +1,7 @@
 # Imports
 import os 
+import chromadb
+import pypdf
 from langchain.llms import OpenAI
 from langchain.document_loaders import TextLoader
 from langchain.document_loaders import PyPDFLoader
