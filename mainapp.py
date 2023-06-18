@@ -1,7 +1,9 @@
 # Imports
 import os 
 import chromadb
-import pypdf
+import glob
+from PyPDF2 import PdfFileReader
+#import pypdf
 import tiktoken
 import streamlit as st
 from streamlit_chat import message
@@ -16,10 +18,12 @@ API_KEY = os.environ.get('OPENAI_API_KEY')
 model_id = "gpt-3.5-turbo"
 
 llm=ChatOpenAI(model_name = model_id, temperature=0.0)
+folder_path = '/docs'
+pdf_files = glob.glob(os.path.join(folder_path, '*.pdf'))
+#loaders = PyPDFLoader('docs/valuation.pdf')
 
-loaders = PyPDFLoader('docs/valuation.pdf')
-
-index = VectorstoreIndexCreator().from_loaders([loaders])
+#index = VectorstoreIndexCreator().from_loaders([loaders])
+index = VectorstoreIndexCreator().from_loaders([pdf_files])
 
 st.title('✨ AI Smart Query | AI智慧畅聊 ')
 prompt = st.text_input("Welcome to AI Smart Query, questions will be answered based on the sources in our docs directory.\n\n欢迎来到AI智慧畅聊，基于本项目docs目录下的文档资源进行高效QA问答。")
