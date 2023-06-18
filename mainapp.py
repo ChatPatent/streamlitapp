@@ -21,7 +21,7 @@ loaders = PyPDFLoader('docs/valuation.pdf')
 
 index = VectorstoreIndexCreator().from_loaders([loaders])
 
-st.title('✨ Query your Documentation ')
+st.title('✨ AI Smart Query | AI智慧畅聊 ')
 prompt = st.text_input("Please ask your question that will be answered based on the pdf file in our docs directory.|欢迎基于本项目docs目录下的pdf文档进行QA问答。")
 
 if prompt:
