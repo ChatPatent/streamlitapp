@@ -22,7 +22,7 @@ loaders = PyPDFLoader('docs/valuation.pdf')
 index = VectorstoreIndexCreator().from_loaders([loaders])
 
 st.title('✨ AI Smart Query | AI智慧畅聊 ')
-prompt = st.text_input("Welcome to AI Smart Query, questions will be answered based on the sources in our docs directory.|欢迎基于本项目docs目录下的文档资源进行QA问答。")
+prompt = st.text_input("Welcome to AI Smart Query, questions will be answered based on the sources in our docs directory.\n欢迎基于本项目docs目录下的文档资源进行QA问答。")
 
 if prompt:
     # stuff chain type sends all the relevant text chunks from the document to LLM    
