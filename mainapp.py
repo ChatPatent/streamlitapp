@@ -1,3 +1,7 @@
+pip install openai
+pip install langchain
+pip install streamit
+
 # Imports
 import os 
 from langchain.llms import OpenAI
