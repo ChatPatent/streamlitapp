@@ -15,7 +15,7 @@ API_KEY = os.environ.get('OPENAI_API_KEY')
 #os.environ["OPENAI_API_KEY"] = API_KEY
 model_id = "gpt-3.5-turbo"
 
-llm=ChatOpenAI(model_name = model_id, temperature=0.2)
+llm=ChatOpenAI(model_name = model_id, temperature=0.0)
 
 loaders = PyPDFLoader('docs/valuation.pdf')
 
