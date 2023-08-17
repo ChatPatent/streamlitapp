@@ -1,6 +1,6 @@
 # Imports
 import os 
-import chromadb
+#import chromadb
 import pypdf
 import tiktoken
 import streamlit as st
