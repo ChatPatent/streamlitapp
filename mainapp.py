@@ -30,3 +30,5 @@ if prompt!="" and not prompt.strip().isspace() and not prompt == "" and not prom
     # Write the results from the LLM to the UI
     st.write("<br><i>" + response + "</i><hr>", unsafe_allow_html=True )
     #st.write("<b>" + prompt + "</b><br><i>" + response + "</i><hr>", unsafe_allow_html=True )
+else:
+    st.write("Enter your query first.")
